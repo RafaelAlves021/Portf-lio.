@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rafael Alves — Desenvolvedor</title>
+
+<!-- Meta Tags para SEO e Partilha em Redes Sociais (Open Graph) -->
+<meta name="description" content="Portfólio de Rafael Alves, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor web focado em landing pages e aplicações Django.">
+<meta property="og:title" content="Rafael Alves — Desenvolvedor & Freelancer">
+<meta property="og:description" content="Conheça os meus projetos em Django, HTML, CSS, JavaScript e trabalhos como freelancer em landing pages.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/RafaelAlves021">
+<meta property="og:image" content="https://raw.githubusercontent.com/RafaelAlves021/RafaelAlves021/main/preview.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rafael Alves — Desenvolvedor & Freelancer">
+<meta name="twitter:description" content="Conheça os meus projetos em Django, HTML, CSS, JavaScript e trabalhos como freelancer em landing pages.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/RafaelAlves021/RafaelAlves021/main/preview.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,20 +46,30 @@
 <main>
 
   <section class="hero" id="topo">
+    <!-- Badge de Status Profissional -->
+    <div class="hero-badge">
+      <span class="badge-dot"></span> Disponível para estágio em TI & freelas
+    </div>
+
     <div class="terminal">
       <div class="terminal-bar">
         <div class="terminal-dots">
           <span></span><span></span><span></span>
         </div>
+        <span class="terminal-title">rafael@portfolio:~</span>
       </div>
       <div class="terminal-body">
         <p class="line typed" id="typed-line"></p>
         <p class="line line-muted" id="line-role"></p>
       </div>
     </div>
+
     <div class="hero-meta">
-      <a href="#projetos" class="btn-primary">Ver projetos</a>
-      <a href="https://github.com/RafaelAlves021" target="_blank" rel="noopener" class="btn-ghost">github.com/RafaelAlves021</a>
+      <a href="#projetos" class="btn-primary">Ver projetos <span class="arrow">↓</span></a>
+      <a href="https://github.com/RafaelAlves021" target="_blank" rel="noopener" class="btn-ghost">
+        <svg class="github-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        github.com/RafaelAlves021
+      </a>
     </div>
   </section>
 
@@ -53,8 +78,8 @@
       <span class="file-icon">Sobre</span>
     </div>
     <div class="section-body prose">
-      <p>Estou no 2º período de <strong>Análise e Desenvolvimento de Sistemas</strong> na Anhanguera, com conclusão prevista para julho de 2028. Enquanto estudo, trabalho como operador de telemarketing na Datamétrica — e uso as horas fora disso pra construir projetos reais em HTML, CSS, JavaScript, Bootstrap e Python.</p>
-      <p>Estou procurando um estágio em TI: desenvolvimento front-end, desenvolvimento back-end, desenvolvimento web, suporte técnico, help desk, infraestrutura ou sistemas. Aprendo rápido, entrego o que combino e gosto de resolver problema de gente de verdade — os projetos abaixo nasceram de pedidos reais, não de exercícios de curso.</p>
+      <p>Estou no 2º período de <strong>Análise e Desenvolvimento de Sistemas</strong> na Anhanguera, com conclusão prevista para julho de 2028. Atualmente, foco os meus estudos e dedico-me a atuar como <strong>freelancer na criação e venda de landing pages</strong>, ajudando negócios a marcar presença online e converter visitantes em clientes através de código limpo e responsivo.</p>
+      <p>Estou procurando um estágio em TI: desenvolvimento front-end, desenvolvimento back-end, desenvolvimento web, suporte técnico, help desk, infraestrutura ou sistemas. Aprendo rápido, entrego o que combino e gosto de resolver problemas reais — os projetos abaixo nasceram de demandas práticas do mercado.</p>
     </div>
   </section>
 
@@ -63,33 +88,16 @@
       <span class="file-icon">Projetos</span>
     </div>
 
-    <article class="project">
-      <div class="project-marker" aria-hidden="true"></div>
-      <div class="project-content">
-        <div class="project-top">
-          <h3>Barbearia do Feio</h3>
-          <span class="project-tag">site institucional</span>
-        </div>
-        <p class="project-desc">Site para uma barbearia real em Magalhães Bastos (RJ), com sistema de marcação de horário e espaço para avaliação dos clientes. Paleta preto e branco old school e nomes de serviço com gíria carioca — "disfarce" em vez de degradê, "nevou" em vez de platinado.</p>
-        <ul class="project-tech">
-          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li>
-        </ul>
-      </div>
-    </article>
+    <!-- Barra de Filtros Dinâmicos -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">todos</button>
+      <button class="filter-btn" data-filter="landing">landing pages</button>
+      <button class="filter-btn" data-filter="backend">back-end</button>
+      <button class="filter-btn" data-filter="institutional">institucional</button>
+    </div>
 
-    <article class="project">
-      <div class="project-marker" aria-hidden="true"></div>
-      <div class="project-content">
-        <div class="project-top">
-          <h3>FitZone</h3>
-          <span class="project-tag">landing page</span>
-        </div>
-        <p class="project-desc">Landing page para uma plataforma de treinos online, com seções sobre, multimídia, planos e formulário de contato. Foco em deixar o layout responsivo e corrigir problemas visuais da versão anterior.</p>
-        <ul class="project-tech">
-          <li>HTML</li><li>CSS</li>
-        </ul>
-      </div>
-    </article>
+    <!-- Contentor onde o JavaScript injeta os projetos dinamicamente -->
+    <div class="projects-container" id="projects-container"></div>
 
     <a href="https://github.com/RafaelAlves021" target="_blank" rel="noopener" class="more-projects">mais projetos no github →</a>
   </section>
@@ -100,8 +108,8 @@
     </div>
     <div class="stack-grid">
       <div class="stack-item"><span class="stack-key">linguagens</span><span class="stack-val">HTML, CSS, JavaScript, Python</span></div>
-      <div class="stack-item"><span class="stack-key">frameworks</span><span class="stack-val">Bootstrap</span></div>
-      <div class="stack-item"><span class="stack-key">versionamento</span><span class="stack-val">Git, GitHub</span></div>
+      <div class="stack-item"><span class="stack-key">frameworks</span><span class="stack-val">Bootstrap, Django</span></div>
+      <div class="stack-item"><span class="stack-key">serviços / freela</span><span class="stack-val">Criação e Venda de Landing Pages</span></div>
       <div class="stack-item"><span class="stack-key">interesse</span><span class="stack-val">front-end, back-end, suporte técnico, infraestrutura</span></div>
     </div>
   </section>
@@ -126,7 +134,6 @@
 <footer class="footer">
   <span>feito por Rafael Alves — 2026</span>
 </footer>
-
 
 <script src="script.js"></script>
 </body>
